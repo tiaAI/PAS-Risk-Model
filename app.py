@@ -46,7 +46,8 @@ Uterine_surgery_number = st.number_input("Uterine Surgery Number:", min_value=0,
 Cervical_canal_length = st.number_input("Cervical Canal Length (mm):", min_value=0, max_value=200, value=28)
 
 # restecg: categorical selection
-Uterine_anteroposterior_diameter_ratio = st.number_input("Uterine Anteroposterior Diameter Ratio:", min_value=0, max_value=50, value=1.14)
+Uterine_anteroposterior_diameter_ratio = st.number_input("Uterine Anteroposterior Diameter Ratio:", min_value=0.0, max_value=50.0, value=1.14)
+
 
 # thalach: numerical input
 Placental_abnormal_vasculature_diameter = st.number_input("Placental Abnormal Vasculature Diameter (mm):", min_value=0, max_value=50, value=3.7)
