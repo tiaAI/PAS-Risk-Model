@@ -69,9 +69,10 @@ if st.button("Predict"):
     # Display prediction results
     st.write(f"**Prediction Probabilities:** {predicted_proba}")
 
-
-    advice = f"PAS风险模型预测您在剖宫产过程中发生大出血或需要子宫切除的概率为 {predicted_proba:.1f}。"
+    
+    advice = f"The PAS Risk Model predicts a {predicted_proba:.1f}% probability of significant bleeding or hysterectomy during cesarean delivery."
     st.write(advice)
+
 
 
     # Calculate SHAP values and display force plot
