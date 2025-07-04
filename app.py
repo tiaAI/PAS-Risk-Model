@@ -70,23 +70,9 @@ if st.button("Predict"):
     st.write(f"**Prediction Probabilities:** {predicted_proba}")
 
 
-    if predicted_proba >= 0.486:
-        advice = (
-        f"According to our model, you are at a high risk of experiencing significant bleeding or requiring a hysterectomy during cesarean delivery, "
-        f"as predicted by the PAS Risk Model with an estimated probability of {predicted_proba:.1f}%. "
-        "Although this is only a prediction, it suggests a potentially elevated risk of intraoperative complications. "
-        "We strongly recommend that you consult with an obstetric specialist as soon as possible for further evaluation "
-        "and to develop an individualized prenatal management plan to ensure appropriate medical support and a safe delivery."
-        )
-    else:
-        advice = (
-        f"According to our model, your risk of experiencing significant bleeding or requiring a hysterectomy during cesarean delivery is low. "
-        f"The PAS Risk Model estimates your likelihood of avoiding such complications at {predicted_proba:.1f}%. "
-        "While the risk is low, we still recommend continued regular prenatal check-ups and close monitoring "
-        "to ensure a safe and smooth delivery process."
-        )
-
+    advice = f"PAS风险模型预测您在剖宫产过程中发生大出血或需要子宫切除的概率为 {predicted_proba:.1f}。"
     st.write(advice)
+
 
     # Calculate SHAP values and display force plot
     explainer = shap.TreeExplainer(model)
