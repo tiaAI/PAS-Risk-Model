@@ -50,13 +50,13 @@ Uterine_anteroposterior_diameter_ratio = st.number_input("Uterine Anteroposterio
 
 
 # thalach: numerical input
-Placental_abnormal_vasculature_diameter = st.number_input("Placental Abnormal Vasculature Diameter (mm):", min_value=0, max_value=50, value=3.7)
+Placental_abnormal_vasculature_diameter = st.number_input("Placental Abnormal Vasculature Diameter (mm):", min_value=0., max_value=50.0, value=3.7)
 
 # thalach: numerical input
-Placental_abnormal_vasculature_area = st.number_input("Placental Abnormal Vasculature Area (mm2):",  min_value=0, max_value=50, value=4.4)
+Placental_abnormal_vasculature_area = st.number_input("Placental Abnormal Vasculature Area (mm2):",  min_value=0.0, max_value=50.0, value=4.4)
 
 # exang: categorical selection
-Intraplacental_dark_T2_band_area = st.number_input("Intraplacental Dark T2WI Band Area (mm2):", min_value=0, max_value=50, value=6.1)
+Intraplacental_dark_T2_band_area = st.number_input("Intraplacental Dark T2WI Band Area (mm2):", min_value=0.0, max_value=50.0, value=6.1)
 
 # Process inputs and make predictions
 feature_values = [Gestational_age,Maternal_age,Gravidity,Parturition,Prior_C_sections_number,Uterine_surgery_number,Cervical_canal_length,Uterine_anteroposterior_diameter_ratio,Placental_abnormal_vasculature_diameter,Placental_abnormal_vasculature_area,Intraplacental_dark_T2_band_area]
