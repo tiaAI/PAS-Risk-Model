@@ -70,7 +70,7 @@ if st.button("Predict"):
     st.write(f"**Prediction Probabilities:** {predicted_proba}")
 
     
-    advice = f"The PAS Risk Model predicts a {predicted_proba:.1f}% probability of significant bleeding or hysterectomy during cesarean delivery."
+    advice = f"The PAS Risk Model predicts a {predicted_proba:.1f} probability of significant bleeding or hysterectomy during cesarean delivery."
     st.write(advice)
 
 
